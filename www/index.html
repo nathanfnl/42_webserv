@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webserv 42 - Test Page</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #1e272e;
+            color: #d2dae2;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        h1 {
+            margin-bottom: 40px;
+            font-size: 2.5rem;
+            color: #0fbcf9;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            width: 100%;
+            max-width: 400px;
+        }
+        .btn {
+            background-color: #3c40c6;
+            color: white;
+            text-decoration: none;
+            padding: 18px 20px;
+            text-align: center;
+            border-radius: 8px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            transition: background-color 0.3s, transform 0.2s;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+        }
+        .btn:hover {
+            background-color: #575fcf;
+            transform: translateY(-3px);
+        }
+        .btn:active {
+            transform: translateY(0);
+        }
+        .btn-magic {
+            background-color: #ff3f34;
+        }
+        .btn-magic:hover {
+            background-color: #ff5e57;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Webserv Test Area</h1>
+
+    <div class="button-container">
+        <a href="/n_importe_quoi_qui_n_existe_pas.html" class="btn">wrong URL</a>
+
+        <a href="/list/" class="btn">list directory</a>
+
+        <a href="/old/" class="btn">redirected URL</a>
+    </div>
+
+</body>
+</html>
